@@ -1,3 +1,16 @@
 <template name="listPosts">
-    <h1>Hola, mundo</h1>
+        {{#each posts}}
+            <ul class="collection">
+                <a href="/post/{{_id}}">
+                    <li class="collection-item avatar flow-text blue-grey darken-2 white-text">
+                        <span class="title">{{title}}</span>
+                        <p>{{content}} <br></p>
+                        <a href="" class="secondary-content right-align delete"><i class="material-icons">delete</i></a> 
+                    </li>
+                </a>
+            </ul>
+        {{/each}}
+        <div><a href="#addNewPost" class="modal-trigger btn-floating btn-large waves-effect waves-light blue-grey lighten-2 right"><i class="material-icons">add</i></a></div>
+
+        {{>addNewPost}}
 </template>

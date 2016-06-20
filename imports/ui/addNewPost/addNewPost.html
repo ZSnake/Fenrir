@@ -1,0 +1,27 @@
+<template name="addNewPost">
+    <div id="addNewPost" class="modal modal-fixed-footer  blue-grey darken-1 white-text">
+        <div class="modal-content">
+        <h4>New Post</h4>
+        <p>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="title" type="text" max=30 length="30" class="validate">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="content" max=100 length="100" class="materialize-textarea"></textarea>
+                            <label for="content">Content</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </p>
+        </div>
+        <div class="modal-footer blue-grey darken-2">
+            <a class="modal-action modal-close waves-effect waves-red btn-flat white-text">Cancel</a>
+            <a id="addCourseButton" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Add</a>
+        </div>
+    </div>
+</template>
